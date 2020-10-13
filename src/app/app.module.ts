@@ -20,6 +20,7 @@ import { ChampionComponent } from './components/champion/champion.component';
 import { TeamComponent } from './components/team/team.component';
 import { BigChampionCardComponent } from './components/big-champion-card/big-champion-card.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     TeamComponent,
     BigChampionCardComponent,
     NavbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
