@@ -1,0 +1,12 @@
+<div>
+  <div class="center-text">
+    <h1>Generate random Champion.</h1>
+    <p>Let the fate decide, which champion to play next.</p>
+  </div>
+  <div class="container">
+    <button mat-raised-button color="primary" (click)="generateNewRandomChampion()">Generate new Champion</button>
+  </div>
+  <div class="container">
+    <app-big-champion-card [champ]=champion class="center"></app-big-champion-card>
+  </div>
+</div>
