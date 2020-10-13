@@ -1,4 +1,2 @@
-<h2>{{champion.name}} Details</h2>
-<div><span>id: </span>{{champion.id}}</div>
-<div><span>name: </span>{{champion.name}}</div>
-<img src={{champion.avatar}} alt="" srcset="">
+<button mat-stroked-button (click)="generateNewRandomChampion()">Generate new Champion</button>
+<app-big-champion-card [champ]=champion></app-big-champion-card>

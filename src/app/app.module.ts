@@ -9,13 +9,15 @@ import { CoreModule } from './core';
 import { HttpClientModule } from '@angular/common/http';
 import { ChampionComponent } from './components/champion/champion.component';
 import { TeamComponent } from './components/team/team.component';
+import { BigChampionCardComponent } from './components/big-champion-card/big-champion-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     ChampionComponent,
-    TeamComponent
+    TeamComponent,
+    BigChampionCardComponent
   ],
   imports: [
     BrowserModule,

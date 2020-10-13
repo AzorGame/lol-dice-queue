@@ -12,8 +12,7 @@ export class ChampionService {
   // TODO put these values in environment file
   private PATCH_VERSION = '10.20.1';
   private COMMUNITY_API_SERVER = 'https://cdn.communitydragon.org/latest';
-  private DDRAGON_API_SERVER = 'http://ddragon.leagueoflegends.com/cdn/' + this.PATCH_VERSION;
-
+  private DDRAGON_API_SERVER = 'assets/ddragon/' + this.PATCH_VERSION;
   constructor(private http: HttpClient) { }
 
   /**
@@ -31,7 +30,9 @@ export class ChampionService {
                 id: res.data[key].id,
                 key: res.data[key].key,
                 name: res.data[key].name,
-                avatar: `http://ddragon.leagueoflegends.com/cdn/${this.PATCH_VERSION}/img/champion/${key}.png`,
+                avatar: `assets/ddragon/img/champion/tiles/${key}_0.jpg`,
+                splash: `assets/ddragon/img/champion/splash/${key}_0.jpg`,
+                tags: res.data[key].tags,
                 title: res.data[key].title,
                 blurb: res.data[key].blurb,
               };

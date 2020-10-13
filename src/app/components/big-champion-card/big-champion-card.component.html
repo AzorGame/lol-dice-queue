@@ -1,0 +1,22 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <img mat-card-avatar src="{{champ.avatar}}" alt="">
+    <mat-card-title>{{champ.name}}</mat-card-title>
+    <mat-card-subtitle>{{champ.title}}</mat-card-subtitle>
+    <span class="tool-spacer"></span>
+    <mat-chip-list>
+      <mat-chip *ngFor="let tag of champ.tags">{{ tag }}</mat-chip>
+    </mat-chip-list>
+  </mat-card-header>
+  <img mat-card-image src="{{champ.splash}}" alt="Photo of {{champ.name}}">
+  <mat-card-content>
+    <p>
+      {{champ.blurb}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-stroked-button href="https://u.gg/lol/champions/{{champ.name}}/build" target="_blank">U.GG</a>
+    <a mat-stroked-button href="https://euw.op.gg/champion/{{champ.name}}/statistics/mid" target="_blank">OP.GG</a>
+    <a mat-stroked-button href="https://www.probuilds.net/champions/details/{{champ.key}}">Probuilds.net</a>
+  </mat-card-actions>
+</mat-card>
